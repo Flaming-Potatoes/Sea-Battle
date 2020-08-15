@@ -36,13 +36,13 @@ int main() {
 	while (true) {
 		char c = getch();
 		if (ch != c) {
-			if (c == 'W' || c == 'w'){
+			if (c == 'W' || c == 'w' || c == 72){
 				ind = true;
 				system("cls");
 				cout << setw(31) << "> > >START< < <" << endl << endl;
 				cout << setw(25) << "EXIT";
 			}
-			else if (c == 'S' || c == 's') {
+			else if (c == 'S' || c == 's' || c == 80) {
 				ind = false;
 				system("cls");
 				cout << setw(26) << "START" << endl << endl;
@@ -61,5 +61,7 @@ int main() {
 			}
 		}
 		ch = c;
+		c << ch + 0;
+		cin >> c;
 	}
 }
