@@ -26,25 +26,27 @@ void Generate();
 
 int main() {
 	setlocale(0, "RUS");
-	cout << setw(10) << fixed << "Пожалуйста используйте английскую раскладку." << endl;
+	cout << setw(10)  << "Пожалуйста используйте английскую раскладку." << endl;
+	cout << setw(30) << "> > > Enter < < <";
+	while(ch != 13)
 	ch = getch();
 	system("cls");
-	cout << setw(66) << "> > >START< < <" << endl << endl;
-	cout << setw(60) << "EXIT";
+	cout << setw(31) << "> > >START< < <" << endl << endl;
+	cout << setw(25) << "EXIT";
 	while (true) {
 		char c = getch();
 		if (ch != c) {
 			if (c == 'W' || c == 'w'){
 				ind = true;
 				system("cls");
-				cout << setw(66) << "> > >START< < <" << endl << endl;
-				cout << setw(60) << "EXIT";
+				cout << setw(31) << "> > >START< < <" << endl << endl;
+				cout << setw(25) << "EXIT";
 			}
 			else if (c == 'S' || c == 's') {
 				ind = false;
 				system("cls");
-				cout << setw(61) << "START" << endl << endl;
-				cout << setw(65) << "> > >EXIT< < <";
+				cout << setw(26) << "START" << endl << endl;
+				cout << setw(30) << "> > >EXIT< < <";
 			}
 		}
 		 if (c == 13) {
