@@ -1,3 +1,11 @@
-﻿  Menu.cpp
-C:\Users\danik\source\repos\ConsoleApplication1\ConsoleApplication1\Menu.cpp(14,34): warning C4081: требуется "newline"; обнаружен ";"
-  ConsoleApplication1.vcxproj -> C:\Users\danik\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+﻿  GenerateField.cpp
+C:\Users\danik\source\repos\Sea-Battle-master\ConsoleApplication1\GenerateField.cpp(2,34): warning C4081: требуется "newline"; обнаружен ";"
+C:\Users\danik\source\repos\Sea-Battle-master\ConsoleApplication1\GenerateField.cpp(71,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Menu.cpp
+C:\Users\danik\source\repos\Sea-Battle-master\ConsoleApplication1\Menu.cpp(14,34): warning C4081: требуется "newline"; обнаружен ";"
+C:\Users\danik\source\repos\Sea-Battle-master\ConsoleApplication1\Menu.cpp(64,14): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\danik\source\repos\Sea-Battle-master\ConsoleApplication1\Menu.cpp(64,5): warning C4552: "<<": результат выражения не используется
+  PrintField.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\danik\source\repos\Sea-Battle-master\x64\Debug\ConsoleApplication1.exe при последней инкрементной компоновке; выполняется полная компоновка
+  ConsoleApplication1.vcxproj -> C:\Users\danik\source\repos\Sea-Battle-master\x64\Debug\ConsoleApplication1.exe
