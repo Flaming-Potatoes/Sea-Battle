@@ -150,6 +150,7 @@
     <ClCompile Include="GenerateField.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="PrintField.cpp" />
+    <ClCompile Include="Shoot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

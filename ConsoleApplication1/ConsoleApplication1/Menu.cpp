@@ -15,7 +15,7 @@ const double PI = 3.141592653589793238462643383279502884197169399375105820974944
 const long long inf = (long long)1e18 + 111;
 const int iinf = (int)1e9 + 111;
 
-char c;
+char c = 'w', ch;
 bool ind = 1;
 // Generate Field 
 int w, x, y, xx, yy, k, savex, savey, nap, j, i;
@@ -25,23 +25,31 @@ void PrintFieldPlayerDefense();
 void Generate();
 
 int main() {
+	setlocale(0, "RUS");
+	cout << setw(10)  << "Пожалуйста используйте английскую раскладку." << endl;
+	cout << setw(30) << "> > > Enter < < <";
+	while(ch != 13)
+	ch = getch();
+	system("cls");
+	cout << setw(31) << "> > >START< < <" << endl << endl;
+	cout << setw(25) << "EXIT";
 	while (true) {
-		if (ind) {
-			cout << setw(66) << "> > >START< < <" << endl << endl;
-			cout << setw(60) << "EXIT";
-		}
-		else {
-			cout << setw(61) << "START" << endl << endl;
-			cout << setw(65) << "> > >EXIT< < <";
-		}
 		char c = getch();
-		if (c == 'W' || c == 'w') {
-			ind = true;
+		if (ch != c) {
+			if (c == 'W' || c == 'w' || c == 72){
+				ind = true;
+				system("cls");
+				cout << setw(31) << "> > >START< < <" << endl << endl;
+				cout << setw(25) << "EXIT";
+			}
+			else if (c == 'S' || c == 's' || c == 80) {
+				ind = false;
+				system("cls");
+				cout << setw(26) << "START" << endl << endl;
+				cout << setw(30) << "> > >EXIT< < <";
+			}
 		}
-		else if (c == 'S' || c == 's') {
-			ind = false;
-		}
-		else if (c == 13) {
+		 if (c == 13) {
 			if (ind) {
 				system("cls");
 				Generate();
@@ -52,6 +60,6 @@ int main() {
 				return 0;
 			}
 		}
-		system("cls");
+		ch = c;
 	}
 }

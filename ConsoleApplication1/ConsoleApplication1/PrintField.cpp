@@ -26,10 +26,10 @@ void PrintFieldPlayer() {
     rep(i, 1, 15) {
         Number = 0;
         rep(j, 1, 60) {
-            if (i >= 3 && i <= 11 && j >= 3 && j <= 21 && j % 2) {
+            if (i >= 3 && i <= 11 && j >= 3 && j <= 19 && j % 2) {
                 cout << PlayerDefense[i - 2][++Number];
             }
-            else if (i >= 3 && i <= 11 && j >= 25 && j <= 43 && j % 2) {
+            else if (i >= 3 && i <= 11 && j >= 23 && j <= 39 && j % 2) {
                 cout << PlayerAttack[i - 2][++Number];
             }
             else {
@@ -47,29 +47,29 @@ void FullFieldPlayerDefense(){
     fastio;
     rep(i, 1, 13) {
         PlayerField[i][2] = '|';
+        PlayerField[i][20] = '|';
         PlayerField[i][22] = '|';
-        PlayerField[i][24] = '|';
-        PlayerField[i][44] = '|';
+        PlayerField[i][40] = '|';
     }
     rep(i, 3, 12) {
         Symbol = i + 46;
         PlayerField[i][1] = Symbol;
-        PlayerField[i][23] = Symbol;
-        PlayerField[i][45] = Symbol;
+        PlayerField[i][21] = Symbol;
+        PlayerField[i][41] = Symbol;
     }
     Symbol = 'A';
-    rrep(i, 3, 21, 2){
+    rrep(i, 3, 19, 2){
         PlayerField[1][i] = Symbol;
-        PlayerField[1][i + 22] = Symbol;
+        PlayerField[1][i + 20] = Symbol;
         PlayerField[13][i] = Symbol;
-        PlayerField[13][i + 22] = Symbol;
+        PlayerField[13][i + 20] = Symbol;
         Symbol++;
     }
-    rep(i, 1, 23) {
+    rep(i, 1, 21) {
         PlayerField[2][i] = '=';
         PlayerField[12][i] = '=';
-        PlayerField[2][i + 23] = '=';
-        PlayerField[12][i + 23] = '=';
+        PlayerField[2][i + 20] = '=';
+        PlayerField[12][i + 20] = '=';
     }
     PrintFieldPlayer();
 }
