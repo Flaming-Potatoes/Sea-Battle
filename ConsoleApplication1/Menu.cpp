@@ -15,7 +15,8 @@ const double PI = 3.141592653589793238462643383279502884197169399375105820974944
 const long long inf = (long long)1e18 + 111;
 const int iinf = (int)1e9 + 111;
 
-char c = 'w', ch;
+char c = 'w';
+extern char ch;
 bool ind = 1;
 // Generate Field 
 int w, x, y, xx, yy, k, savex, savey, nap, j, i;
@@ -23,6 +24,7 @@ bool flag;
 //
 void PrintFieldPlayerDefense();
 void Generate();
+void GAME();
 
 int main() {
 	setlocale(0, "RUS");
@@ -52,8 +54,7 @@ int main() {
 		 if (c == 13) {
 			if (ind) {
 				system("cls");
-				Generate();
-				PrintFieldPlayerDefense();
+				GAME();
 				return 0;
 			}
 			else {
@@ -61,7 +62,5 @@ int main() {
 			}
 		}
 		ch = c;
-		c << ch + 0;
-		cin >> c;
 	}
 }
